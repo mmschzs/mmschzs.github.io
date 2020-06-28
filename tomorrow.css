@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+font{color: blue;}
+a{color: skyblue;text-decoration: none;}
+body{background:skyblue ;color: blue;}
+footer{  
+	background:rgba(74,188,235,1.00); border-top:1px color #999(78, 78, 78); 
+	padding:10px 0 30px 0px;
+    width: 100%;left: 0; /*չ��footer���*/
+	margin-top: 15px;
+}  /* HTML5������ʽ ֱ�Ӷ�footerԪ��������ʽ */
+
+.topbottom{height: 80px;width: auto;}
+/* 返回顶部 */
+		.upToNav {
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			background-color: skyblue;
+			/*border: 1px solid var(--DividColor);*/
+			border-radius: 4px;
+			padding: 10px;
+			color: blue;
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,1);
+		}
+
+		.upToNav:hover {
+			background-color: skyblue;
+			/*border: 1px solid var(--ThemeColor);*/
+box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+			color: #fff;
+		}
+
+.content{width: auto;height: auto;}
+section{
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid blue;
+}
+
+.iconbox{width: 527px;height: 527px;}
+.video_JOKER{position: absolute;left: 200px;margin-top:;}
+.video_JOKER video{}
+
+.showbox{width: auto;height: 400px;position: relative;left: 0px;right: 80px; z-index: -1;margin-top: 15px;}
+.imgbox{width: 240px;height: 360px; }
+.imgbox img{width: 240px;height: 360px;border: }
+.textbox{width: 1000px; height: 360px;}
+
+.box{ font-size:20px} 
+.box.f20{ font-size:10px} /*�����С*/
+.top{
+    /* ���ÿ�ȸ߶ȱ�����ɫ */
+    height: auto; /*�߶ȸ�Ϊ�Զ��߶�*/
+    width:100%;
+    margin-left: 0;
+    background:rgba(74,188,235,0.8);
+
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px); /*ë����*/
+
+    position: fixed; /*�̶��ڶ���*/
+    top: 0;/*�붥���ľ���Ϊ0*/
+    left:0;
+    margin-bottom: 5px;
+	z-index: 99;
+}
+.top ul{
+    /* ���ul��ǩ��Ĭ����ʽ */
+    width: auto;/*���Ҳ��Ϊ�Զ�*/
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    /* margin-top: 0;          */
+    display: flex;
+            /*flex-direction: row;*/
+            /*flex-wrap: nowrap;*/
+            flex-flow: row nowrap;
+            justify-content: center;
+    /*��֪��*/
+    padding: 0;
+
+}
+.top li {
+    /* ����һ���˵� */
+    float:left; /* ʹli���ݺ��򸡶�������������  */
+    margin-right:5%;  /* ����li֮��ľ���*/
+    position: relative;
+    overflow: hidden;
+}
+
+.top li a{
+   /* ��������������ʾ�ĸ�ʽ*/
+    display: block; /* ��������ʾΪ��Ԫ�ؿ�ʹ������������ɵ�� */
+    color:blue;
+    text-align: center;
+    padding: 3px;
+    overflow: hidden;
+    text-decoration: none; /* ȥ���»��� */
+    
+}
+.top li a:hover{
+    /* ���ѡ��ʱ������Ϊ��ɫ */
+    color: white;
+}
+.top ul li ul{
+    /* ���ö����˵� */
+    margin-left: -0.2px;
+    
+    position: relative;
+    display: none; /* Ĭ�����ض����˵������� */
+
+}
+.top ul li ul li{
+    /* �����˵�li���ݵ���ʾ */
+    
+    float:none;
+    text-align: center;
+}
+.top ul li:hover ul{
+    /* ���ѡ�ж����˵�����ʱ */
+    display: block;/* ��������ʾΪ��Ԫ�ؿ�ʹ������������ɵ�� */
+    
+}
