@@ -5,11 +5,13 @@ font{color: blue;}
 a{color: skyblue;text-decoration: none;}
 body{background:skyblue ;color: blue;width: 1500px;}
 footer{  
-	background:rgba(74,188,235,1.00); border-top:1px color #999(78, 78, 78); 
+	background:rgba(74,188,235,1.00); 
 	padding:10px 0 30px 0px;
-    width: 100%;left: 0; /*չ��footer���*/
 	margin-top: 15px;
-}  /* HTML5������ʽ ֱ�Ӷ�footerԪ��������ʽ */
+	border-top:1px color #999(78, 78, 78);
+    width: 100%;left: 0; /*展开footer宽度*/
+} 
+.color-F00{ color:blue}  /* HTML5布局样式 直接对footer元素设置样式 */
 
 .topbottom{height: 80px;width: auto;}
 /* 返回顶部 */
@@ -33,11 +35,14 @@ box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2)
 			color: #fff;
 		}
 
-.content{width: 1400px;height: auto;position: relative;padding-left: 50px;margin-right: 50px;}
+.content{width: 1400px;height: auto;position: relative;margin-left: 50px;margin-right: 50px;}
 section{
 	width: 100%;
 	margin: 0 auto;
 	border-bottom: 1px solid blue;
+	padding-top: 30px;
+	background: grey;
+	margin-top: 50px;
 }
 
 .iconbox{width: 527px;height: 527px;}
