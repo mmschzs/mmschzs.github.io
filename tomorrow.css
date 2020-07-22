@@ -3,7 +3,7 @@
 
 font{color: blue;}
 a{color: skyblue;text-decoration: none;}
-body{background:skyblue ;color: blue;}
+body{background:skyblue ;color: blue;width: 1500px;}
 footer{  
 	background:rgba(74,188,235,1.00); border-top:1px color #999(78, 78, 78); 
 	padding:10px 0 30px 0px;
@@ -23,16 +23,17 @@ footer{
 			padding: 10px;
 			color: blue;
 			box-shadow: 0px 0px 10px 1px rgba(0,0,0,1);
+			z-index: 99;
 		}
 
 		.upToNav:hover {
 			background-color: skyblue;
 			/*border: 1px solid var(--ThemeColor);*/
-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2)
 			color: #fff;
 		}
 
-.content{width: auto;height: auto;}
+.content{width: 1400px;height: auto;position: relative;padding-left: 50px;margin-right: 100px;}
 section{
 	width: 100%;
 	margin: 0 auto;
